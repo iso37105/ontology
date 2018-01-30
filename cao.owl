@@ -1,0 +1,3123 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/iso37105/ontology/cao.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/iso37105/ontology/cao.owl">
+    <Prefix name="cc" IRI="http://creativecommons.org/ns#"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="sc" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="vs" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="cao" IRI="https://github.com/iso37105/ontology/cao.owl#"/>
+    <Prefix name="org" IRI="http://ontology.eil.utoronto.ca/organization.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="adms" IRI="http://www.w3.org/ns/adms#"/>
+    <Prefix name="foaf" IRI="http://xmlns.com/foaf/0.1/"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2003/06/sw-vocab-status/ns#"/>
+    <Prefix name="vann" IRI="http://purl.org/vocab/vann/"/>
+    <Prefix name="voaf" IRI="http://purl.org/vocommons/voag#"/>
+    <Prefix name="schema" IRI="http://schema.org"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">cao</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">Robert Rallo, Mark Fox, Dave Welsh, Francesc Giralt, TBC</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+        <IRI></IRI>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1.0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">© ISO (2017). All Rights Reserved.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Descriptive Framework, which can also be referred to as the city anatomy, serves as a basic blueprint to facilitate the integration of operating systems and services within a city or community.  Ultimately, the Descriptive Framework can be the basis of a formal ontology-or knowledge model, which can be useful for helping to plan and implement city operating solutions, particularly for those cities operating solutions and services that may require digital machine-readable information</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/modified"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">02/05/2016</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="cc:license"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">http://creativecommons.org/licenses/by/3.0/</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISO37105 Descriptive Framework for Cities and Communities - City Anatomy Ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/issued"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">02/05/2016</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_formal_organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#privately_owned"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasConstituent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Infraestructure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Finances"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Culture"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="adms:relatedDocumentation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_layer_component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Purpose"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Permanent_resident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Government_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iso21972:Indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Transport"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interaction_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#NonGovernmentOrganization"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Channel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Water_cycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_layer_component"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#how_can_cities_improve_livability"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Earth"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_project"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasRole"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isNodeOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#how_can_cities_attract_talent_and_investment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_maturity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Nondurable_good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pedestrian_way"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Club"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#how_can_cities_improve_mobility"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_priority"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#scale"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Security"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasOwnership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityAnatomyThing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diversity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#commercial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mobility_network_component"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#environmental_impact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_application"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isOrganizedAs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Neighborhood"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/AdministrativeArea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Block"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElectedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Generic_built_domain_element"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#residential"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_evaluation_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Metropolis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_information_portal"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Soil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bicycle_path"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Use"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#https://schema.org/Corporation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_management"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Public_space"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Role"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#reference"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Settlement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#requires"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Metropolitan_area_network"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#performs"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#type"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Energy_cycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Matter_cycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cycle_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heritage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Indicator"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Water"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#how_self-sufficient_is_a_city"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citizens_activities"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Citizen_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Information_platform_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Subway"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespaceUri"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Knowledge"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="vann:preferredNamespacePrefix"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Electricity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Working"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#District"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain_element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OMThing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Production_cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#government_owned"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#ForProfitOrganization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isFormedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Culture_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Road"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Water_distribution_network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#measures"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Biota"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasImpact"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#implements"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_informal_organization"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElementOf"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Temporary_resident"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#name"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#GovernmentOrganization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Performing_arts"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#TransportableThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temporary_resident"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isImplementedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Local_area_network"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pipeline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasType"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#River"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Social_expression"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasPurpose"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/creator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tourist"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Participation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Economy_indicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#enable"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Education"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Dwelling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Environment_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#MeasurableThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Man_made_flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Family"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Raw_data"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environmental_compartment"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Entrepreneurship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Network_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#recreational"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#social_impact"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Urban_function"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sediment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#charitable_owned"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Highway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_operating_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#green_infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tourist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#publicly_owned"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/issued"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#ranks"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/rights"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Economy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#measuresProgressTowards"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wealth_production"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Energy"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="cc:license"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Internet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Livable_district_projects"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#CityOS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sewer_network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_vision"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Competitiveness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Leadership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Impact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Maintenance_cost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Nature_cycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Social_organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Participation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#serves"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Visitor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shopping"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Food"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Goal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isConstituent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infrastructure_indicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#evaluates"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Government"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_objectives"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/modified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Primary_data"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#governs"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Ownership"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions_layer_component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SchemaOrgThing"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#how_resilient_is_a_city"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Specific_built_domain_element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isLocated"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Mobility_network"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Natural_flow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Percentage_of_paved_soil_with_respect_to_total_surface"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Community"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Health"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#public_use"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Consumable_good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizen"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#transports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Power_distribution_network"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#wealth_distribution"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CityIndicatorThing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Airport"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasUse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Administrative_built_domain_element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Durable_good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sports"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Place"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Capacity_development"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://schema.org/Person"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#industrial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Living"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#agricultural"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#how_can_cities_improve_social_equity_by_increasing_personal_opportunities"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#private_use"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_transformation_process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data_communication_network"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Air"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Physical_built_domain_element"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City_performance"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Operation_cost"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Permanent_resident"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#economic_impact"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#how_can_cities_foster_entrepreneurship"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Regulation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizens"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Law"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Good"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Person_role"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Function_indicator"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#City_system_layer_component"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Urban_planning_and_administration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CPS_key_questions"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Railway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Biodiversity"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/title"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Society_layer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Flow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Processed_data"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isQuantifiedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Continent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Policy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasElement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isAppointedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSource"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#sets"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_operation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isDerivedFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#met"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Interactions_layer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Commerce_and_trade"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Matter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isSupportedBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Structure_layer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#interactsWith"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Resident"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Built_domain_indicator"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isMeasuredBy"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_project"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#iso21972Thing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasCost"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tourism"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#CityOS"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_operating_system"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Consumable_good"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Nondurable_good"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Nature_cycle"/>
+        <Class IRI="#green_infrastructure"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Primary_data"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Raw_data"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#ForProfitOrganization"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Goal"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#GovernmentOrganization"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#NonGovernmentOrganization"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Ownership"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Process"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#charitable_owned"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Ownership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#government_owned"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Ownership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#privately_owned"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Ownership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#publicly_owned"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Ownership"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/AdministrativeArea"/>
+        <Class IRI="http://schema.org/Place"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Energy"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#TransportableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Energy"/>
+        <Class IRI="#SchemaOrgThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Person"/>
+        <Class IRI="#SchemaOrgThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasRole"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Person_role"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Person"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+            <Class IRI="http://schema.org/Person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Place"/>
+        <Class IRI="#SchemaOrgThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://schema.org/Role"/>
+        <Class IRI="#SchemaOrgThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Administrative_built_domain_element"/>
+        <Class IRI="http://schema.org/AdministrativeArea"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Administrative_built_domain_element"/>
+        <Class IRI="#Specific_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Block"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Physical_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Building"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Physical_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isFormedBy"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain_element"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#performs"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Urban_function"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain_element"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizen"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Person_role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizens"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizens"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasConstituent"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizen"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizens"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#performs"/>
+            <Class IRI="#Citizens_activities"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Administrative_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#CityOS"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#CityOS"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElementOf"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_Organization"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_Organization"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_application"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_application"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElementOf"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_evaluation_process"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_evaluation_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#evaluates"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_maturity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_evaluation_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#measures"/>
+            <Class IRI="#City_performance"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_evaluation_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#measuresProgressTowards"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_vision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_evaluation_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#sets"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_project"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_formal_organization"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#governs"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_Organization"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isSupportedBy"/>
+            <ObjectUnionOf>
+                <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Law"/>
+                <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Policy"/>
+                <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Regulation"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#requires"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Leadership"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#serves"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_vision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#sets"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_priority"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+        <Class IRI="#CityIndicatorThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElementOf"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_process"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#measuresProgressTowards"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_informal_organization"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_information_portal"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_information_portal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElementOf"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_management"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_management"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_maturity"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Goal"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_vision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_operating_system"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_operating_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElementOf"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_operation"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_priority"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_priority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_vision"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_priority"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#ranks"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_process"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_process"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_project"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_project"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isImplementedBy"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_process"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#interactsWith"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isOrganizedAs"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isConstituent"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isFormedBy"/>
+            <Class IRI="#City_system_layer_component"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_transformation_process"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_process"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_transformation_process"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_project"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_vision"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_vision"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isFormedBy"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective"/>
+                <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_priority"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Club"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Social_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Community"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Social_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Consumable_good"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Good"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Cost"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Culture"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#TransportableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data_communication_network"/>
+        <Class IRI="#Network_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data_communication_network"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#transports"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#District"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Administrative_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Durable_good"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Good"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Dwelling"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Physical_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Economy"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Electricity"/>
+        <Class IRI="http://schema.org/Energy"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Energy_cycle"/>
+        <Class IRI="#Cycle_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environment"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isFormedBy"/>
+            <ObjectIntersectionOf>
+                <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environmental_compartment"/>
+                <Class IRI="#Biodiversity"/>
+            </ObjectIntersectionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environment"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+            <Class IRI="#Settlement"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environmental_compartment"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Family"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Social_organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Flow"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Flow"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#transports"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#TransportableThing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Good"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Matter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Government"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Government"/>
+        <ObjectUnionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isAppointedBy"/>
+                <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizens"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElectedBy"/>
+                <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizens"/>
+            </ObjectSomeValuesFrom>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Government"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#serves"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Community"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Impact"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Indicator"/>
+        <Class IRI="#iso21972:Indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasPurpose"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Purpose"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasType"/>
+            <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasValue"/>
+            <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isDerivedFrom"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Raw_data"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Indicator"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#measures"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#MeasurableThing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasElement"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_application"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasElement"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasElement"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_information_portal"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasElement"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_operating_system"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Infraestructure"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Infraestructure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#transports"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#TransportableThing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Infraestructure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#enable"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Flow"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interaction_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isOrganizedAs"/>
+            <Class IRI="#Interactions_layer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions_layer_component"/>
+        <Class IRI="#City_system_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Knowledge"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Knowledge"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isDerivedFrom"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Law"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Leadership"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Man_made_flow"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Flow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Matter"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#TransportableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Matter_cycle"/>
+        <Class IRI="#Cycle_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#MeasurableThing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isMeasuredBy"/>
+            <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#MeasurableThing"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isQuantifiedBy"/>
+            <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Metropolis"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Administrative_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Mobility_network"/>
+        <Class IRI="#Network_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Mobility_network"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasElement"/>
+            <Class IRI="#Mobility_network_component"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Natural_flow"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Flow"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Nature_cycle"/>
+        <Class IRI="#Cycle_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Neighborhood"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Physical_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Nondurable_good"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Good"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Person_role"/>
+        <Class IRI="http://schema.org/Role"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Person_role"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Physical_built_domain_element"/>
+        <Class IRI="#Specific_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Policy"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Primary_data"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Processed_data"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Public_space"/>
+        <Class IRI="#Specific_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Public_space"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOwnership"/>
+            <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#publicly_owned"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Public_space"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasUse"/>
+            <NamedIndividual IRI="#public_use"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Raw_data"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Regulation"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Resident"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Social_organization"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#NonGovernmentOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isOrganizedAs"/>
+            <Class IRI="#Society_layer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_layer_component"/>
+        <Class IRI="#City_system_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_layer_component"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#performs"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isOrganizedAs"/>
+            <Class IRI="#Structure_layer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_layer_component"/>
+        <Class IRI="#City_system_layer_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_layer_component"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isConstituent"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_objectives"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_objectives"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_project"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_project"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_project"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_evaluation_process"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_project"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isImplementedBy"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_transformation_process"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#TransportableThing"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Urban_function"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Visitor"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizen"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Water_cycle"/>
+        <Class IRI="#Cycle_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#https://schema.org/Corporation"/>
+        <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#ForProfitOrganization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Measure"/>
+        <Class IRI="#OMThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Quantity"/>
+        <Class IRI="#OMThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure"/>
+        <Class IRI="#OMThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Airport"/>
+        <Class IRI="#Mobility_network_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bicycle_path"/>
+        <Class IRI="#Mobility_network_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Biodiversity"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Built_domain_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CPS_key_questions"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Capacity_development"/>
+        <Class IRI="#Citizens_activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citizen_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Citizens_activities"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CityIndicatorThing"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City_performance"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City_system_layer_component"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#City_system_layer_component"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isConstituent"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Continent"/>
+        <Class IRI="#Generic_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Administrative_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Culture_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interaction_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cycle_infrastructure"/>
+        <Class IRI="#Network_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Earth"/>
+        <Class IRI="#Generic_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Economy_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interaction_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Education"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Environment_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Function_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interaction_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Generic_built_domain_element"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Government_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Health"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Highway"/>
+        <Class IRI="#Mobility_network_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Information_platform_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interaction_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infrastructure_indicator"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_indicator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interactions_layer"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Interactions_layer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isFormedBy"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions_layer_component"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Livable_district_projects"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_project"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Living"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Local_area_network"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data_communication_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Metropolitan_area_network"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data_communication_network"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mobility_network_component"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mobility_network_component"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElementOf"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Mobility_network"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_infrastructure"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Infraestructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Network_infrastructure"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isNodeOf"/>
+            <Class IRI="#Network_infrastructure"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class IRI="#Generic_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Participation"/>
+        <Class IRI="#Citizens_activities"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pedestrian_way"/>
+        <Class IRI="#Mobility_network_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Performing_arts"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Permanent_resident"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Resident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power_distribution_network"/>
+        <Class IRI="#Network_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power_distribution_network"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#transports"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Electricity"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Power_distribution_network"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isNodeOf"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Energy_cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Property"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Physical_built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Railway"/>
+        <Class IRI="#Mobility_network_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Road"/>
+        <Class IRI="#Mobility_network_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Security"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Settlement"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sewer_network"/>
+        <Class IRI="#Network_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sewer_network"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isNodeOf"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Water_cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Shopping"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Society_layer"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Society_layer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isFormedBy"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_layer_component"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specific_built_domain_element"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain_element"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specific_built_domain_element"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasCost"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Cost"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specific_built_domain_element"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasImpact"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Impact"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specific_built_domain_element"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#performs"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Urban_function"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specific_built_domain_element"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasOwnership"/>
+            <Class IRI="http://ontology.eil.utoronto.ca/organization.owl#Ownership"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Specific_built_domain_element"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isLocated"/>
+            <Class IRI="http://schema.org/Place"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sports"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure_layer"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Structure_layer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isFormedBy"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_layer_component"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Subway"/>
+        <Class IRI="#Mobility_network_component"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temporary_resident"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Resident"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tourism"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tourist"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Visitor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Transport"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Urban_planning_and_administration"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Use"/>
+        <Class IRI="#CityAnatomyThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#TransportableThing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_distribution_network"/>
+        <Class IRI="#Network_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_distribution_network"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#transports"/>
+            <Class IRI="#Water"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Water_distribution_network"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isNodeOf"/>
+            <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Water_cycle"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Working"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#green_infrastructure"/>
+        <Class IRI="#Cycle_infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#iso21972:Indicator"/>
+        <Class IRI="#iso21972Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions_layer_component"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_layer_component"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_layer_component"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Processed_data"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Raw_data"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Interactions_layer"/>
+        <Class IRI="#Society_layer"/>
+        <Class IRI="#Structure_layer"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environmental_compartment"/>
+        <NamedIndividual IRI="#Air"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environmental_compartment"/>
+        <NamedIndividual IRI="#Biota"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Man_made_flow"/>
+        <NamedIndividual IRI="#Channel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Economy"/>
+        <NamedIndividual IRI="#Commerce_and_trade"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Economy"/>
+        <NamedIndividual IRI="#Competitiveness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Culture"/>
+        <NamedIndividual IRI="#Diversity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Economy"/>
+        <NamedIndividual IRI="#Entrepreneurship"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Economy"/>
+        <NamedIndividual IRI="#Finances"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Nondurable_good"/>
+        <NamedIndividual IRI="#Food"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Culture"/>
+        <NamedIndividual IRI="#Heritage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data_communication_network"/>
+        <NamedIndividual IRI="#Internet"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Cost"/>
+        <NamedIndividual IRI="#Maintenance_cost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Cost"/>
+        <NamedIndividual IRI="#Operation_cost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_indicator"/>
+        <NamedIndividual IRI="#Percentage_of_paved_soil_with_respect_to_total_surface"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Man_made_flow"/>
+        <NamedIndividual IRI="#Pipeline"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Cost"/>
+        <NamedIndividual IRI="#Production_cost"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Natural_flow"/>
+        <NamedIndividual IRI="#River"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environmental_compartment"/>
+        <NamedIndividual IRI="#Sediment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Culture"/>
+        <NamedIndividual IRI="#Social_expression"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environmental_compartment"/>
+        <NamedIndividual IRI="#Soil"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environmental_compartment"/>
+        <NamedIndividual IRI="#Water"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Impact"/>
+        <NamedIndividual IRI="#economic_impact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Impact"/>
+        <NamedIndividual IRI="#environmental_impact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPS_key_questions"/>
+        <NamedIndividual IRI="#how_can_cities_attract_talent_and_investment"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPS_key_questions"/>
+        <NamedIndividual IRI="#how_can_cities_foster_entrepreneurship"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPS_key_questions"/>
+        <NamedIndividual IRI="#how_can_cities_improve_livability"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPS_key_questions"/>
+        <NamedIndividual IRI="#how_can_cities_improve_mobility"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPS_key_questions"/>
+        <NamedIndividual IRI="#how_can_cities_improve_social_equity_by_increasing_personal_opportunities"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPS_key_questions"/>
+        <NamedIndividual IRI="#how_resilient_is_a_city"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CPS_key_questions"/>
+        <NamedIndividual IRI="#how_self-sufficient_is_a_city"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Use"/>
+        <NamedIndividual IRI="#private_use"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Use"/>
+        <NamedIndividual IRI="#public_use"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Impact"/>
+        <NamedIndividual IRI="#social_impact"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Economy"/>
+        <NamedIndividual IRI="#wealth_distribution"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Economy"/>
+        <NamedIndividual IRI="#wealth_production"/>
+    </ClassAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#name"/>
+        <NamedIndividual IRI="#Percentage_of_paved_soil_with_respect_to_total_surface"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">Percentage of paved soil with respect to total surface</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#reference"/>
+        <NamedIndividual IRI="#Percentage_of_paved_soil_with_respect_to_total_surface"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">3.1.A.1.1</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasConstituent"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#implements"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#interactsWith"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isConstituent"/>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isOrganizedAs"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isRelatedTo"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#measuresProgressTowards"/>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#measures"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#sets"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasConstituent"/>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isConstituent"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#hasElement"/>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isElementOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#implements"/>
+        <ObjectProperty IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#isImplementedBy"/>
+    </InverseObjectProperties>
+    <DataPropertyDomain>
+        <DataProperty IRI="#name"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#reference"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#scale"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain_element"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#type"/>
+        <Class IRI="http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#reference"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#scale"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#type"/>
+        <DataOneOf>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">core</Literal>
+            <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">supporting</Literal>
+        </DataOneOf>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#ForProfitOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://ontology.eil.utoronto.ca/organization.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#GovernmentOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://ontology.eil.utoronto.ca/organization.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#NonGovernmentOrganization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://ontology.eil.utoronto.ca/organization.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#Organization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An organization is a set of constraints on the activities performed by agents. An organization consists of a set of divisions and subdivisions (recursive definition), a set of organization-agents (said to be members of a division of the organization), a set of roles that the members play in the organization, and an organization-goal tree that specifies the goals (and their decomposition into subgoals) the members try to achieve. Includes the following three subclasses: For profit organization, Government organization, Non-government organization
+ [Defined in the Organization Ontology, http://ontology.eil.utoronto.ca]
+
+Mapping from ISO 30182: ORGANIZATION</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://ontology.eil.utoronto.ca/organization.owl</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#OrganizationThing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Communication-links are established among organizational agents in various roles. Communication-links capture the notion of benevolent communication in which agents regard each other as peers volunteer information that they believe relevant to other agents. This exchange does not create obligations for any agent.
+
+The communication-link is a unidirectional link used to communicate information from one agent to another. It describes, for an agent in a given organizational role, the information it is interested in receiving and the information it can benevolently distribute to others.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#Ownership</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the act, state or right of possessing a something. In the context of the built domain element, ownership is regulated by Property Laws.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#Process</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISO 30182 Mapping: METHOD</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#privately_owned</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The owner is a specific person or group of persons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://ontology.eil.utoronto.ca/organization.owl#publicly_owned</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The owner is the community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://schema.org/AdministrativeArea</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A geographical region, typically under the jurisdiction of a particular government.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://schema.org/Person</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Entity in schema.org that represents a person who can be alive, dead, undead, or fictional.
+
+Mapping from ISO 30182: PERSON</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://schema.org/Place</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Entities that have a somewhat fixed, physical extension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://schema.org/Role</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Entity in schema.org that represents additional information about a relationship or property. For example a Role can be used to explain that a &apos;member&apos; role linking some Sports Team to a player occurred during a particular time period, or that a Person&apos;s &apos;actor&apos; role in a Movie was for some particular character Name. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like &apos;member&apos; or &apos;actor&apos;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Administrative_built_domain_element</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific type of Administrative Area in a city. The more general term Administrative Area is defined by the schema.org ontology as a geographical region under the jurisdiction of a particular government.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Block</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Denotes a rectangular area in a city surrounded by streets and usually containing several buildings. In the anatomy model the scale of the block is in the order of 103 people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="adms:relatedDocumentation"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Building</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">ISO 30182 -
+
+http://standards.iso.org/ittf/PubliclyAvailableStandards/c053302_ISO_IEC_30182_2017.zip</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Can be public or private and includes the surrounding public space. The built domain has two distinct and essential characteristics in relation to urbanism (i.e., urban life and organization): (i) it is the main expression of the material culture of a city (i.e., it contains most physical artifacts created by people), and (ii) it is fundamentally multi-scale in nature (i.e., scale is an intrinsic characteristic of the built environment). Every node in the built domain has a production and an operational cost, with an economic, social and environmental impact on its setting and, ultimately, on city finances, efficiency and quality of life. The built domain, with its public spaces, hosts the more systematic, formal and regulated human functions (services) in the city, (i.e. the activities which people engage in or perform).
+
+Note that ISO 30182 BUILDING concept can be mapped onto CAO Building class, and that ISO 30182 FUNCTION concept can be mapped onto the CAO Urban_function class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Built_domain_element</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Each of the physical or administrative elements that form the built domain. Each of these elements is located in a specific Place with a specic type of use. A Place, according to the schema.org ontology, is an entity with some physical extension.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizen</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific City_role that corresponds to a person who lives or visits a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Citizens</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Citizens include person (me), family, organizations, and businesses. The term person is applied broadly, and includes individuals who live, work and/or visit within a city, whether or not they are permanent or legal residents. Beyond individuals, Citizens includes the different ways in which people organize themselves (e.g., into clubs) and work and do business (e.g., in corporations and small businesses).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An Administrative_built_domain_element. Represents a large and densely populated urban area and may include several independent administrative districts. In the anatomy model the scale of the city is in the order of 106 people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#CityOS</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Component of the information platform. Provides a shared - or trans-disciplinary - set of tools to manage and organize the city as a system of systems for all city activities by defining protocols that standardize methods for improving knowledge acquisition and information transfer (i.e., data flows).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_Organization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the way in which a city is organized. There are two types of city organization: informal and formal.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_application</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Component of the information platform that includes Tools and Applications needed for system-level data analysis and representation, decision support and management actions. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_evaluation_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The process of city evaluation defines the methodologies and actions needed to answer the following question: “What should be measured and evaluated in the city to help identify and prioritize needs to make the city achieve progress according to its vision?”</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_formal_organization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the deliberately planned structure of a city. A formal organization has a specific purpose and aims at the efficient accomplishment of city objectives.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_governance_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the set of all processes of governing the formal and informal city organization, along with concrete activities and actions. It requires leadership to guide and influence city organization, by setting the objectives and priorities needed to achieve the city vision within a political, administrative and legal framework - both within the election cycle and over the long term.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_indicator</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">City indicators are the explicit elements that measure performance in the city anatomy framework. Performance is measured in terms of progress towards the achievement of specific &quot;city objectives&quot; like self-sufficiency, mobility, resilience, investments, equity, entrepreneurship and quality of life).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_informal_organization</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the unplanned and many times more “organic” city structure that results from informality in urban areas. In a world marked by globalization processes and deep socioeconomic restructuring, the value of informality seems to be central and increasingly important in the structuring of urban processes, as these reflect the actual organization of life, society and economies.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_information_portal</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Component of the information platform that facilitates the access to (open) data and specific learning protocols and related resources, including information on both hard and soft systems, and on the many different mechanisms by which cities acquire and apply knowledge.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_management</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific type of governance process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_objective</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Objectives related to a specific city vision. Cities can achieve their strategic objectives by establishing appropriate policies and by applying well assessed and commonly accepted methodologies for city transformation stemming from a reliable city model and framework (i.e., the city protocol), along with indicators and indexes, tools, shared projects, documents of reference, and guidelines or “de facto” standards.
+
+Additional mappings :
+ISO 30182 OBJECTIVE</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_operating_system</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Component of the information platform. Provides a shared - or trans-disciplinary - set of tools to manage and organize the city as a system of systems for all city activities by defining protocols that standardize methods for improving knowledge acquisition and information transfer (i.e., data flows).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_operation</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific type of governance process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_priority</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Priorities allow the ranking of city objectives. The ranking allows the prioritization of transformational initiatives consistently with citizen’s needs, available resources and the city vision.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A process that occurs in the context of a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_project</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to an individual or collaborative enterprise that is carefully planned and designed to achieve a particular aim.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A city is a system of systems and interactions, an arrangement of, and set of relationships between, multiple layers of a relatively large and permanent human settlement, with an administrative and legal status supported by local laws, and one that is recognized worldwide. The constituents of the City System are Structure, Interactions and Society.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_system_layer</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Each of the individual components of a City Anatomy System. Each layer is formed by a number of layer components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_transformation_process</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The core process through which a city changes and evolves. The transformational process has some transformational objectives that are achieved by implementing some transformational project.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#City_vision</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the set of objectives and priorities of a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Cost</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the amount of economic resources that have to be spent to obtain something. Every node in the built domain has a production and an operational cost, with an economic, social and environmental impact on its setting and, ultimately, on city finances and efficiency. Specific instances of cost are: 
+Operation cost: Refers to the expenses that are related to the operation of a built_domain_element. These costs are necessary just to maintain its existence.
+Production cost: Refers to the cost incurred when manufacturing a built_domain_element. Production costs combine the costs of raw materials and labor.
+Maintenance cost: Refers to the costs incurred to keep a built_domain_element in good condition and/or good working order.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Culture</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the way of life, especially the general customs and beliefs, of a particular group of people at a particular time and in a specific geographic location. Includes all assets in the City Anatomy that are not part of the material world or built domain (unlike tangible “cultural” objects such as museums, monuments, works of art, archeological sites, city landmarks, etc.). Culture impacts and reflects all dimensions of human life – emotion, intelligence, spirituality, creativity and community. Specific instances of culture include: 
+•	Diversity
+•	Heritage
+•	Social expression</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Data as an abstract concept can be viewed as the lowest level of abstraction, from which information and then knowledge are derived.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Data_communication_network</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Infrastructure responsible for transporting information using different physical media. Twenty-first century communication networks are mostly digital and follow a distributed organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#District</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An Administrative_built_domain_element. Represents a region within a city marked off for administrative or other purposes. In the anatomy model the scale of the district is in the order of 105 people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Dwelling</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A place that serves as living quarters for one or more people or families. In the anatomy model the scale of the dwelling is in the order of 10 people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Economy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An economy or economic system consists of the production, distribution or trade, and consumption of limited goods and services by different agents in a given geographical location. The economic agents can be individuals, businesses, organizations, or governments. Wealth production and distribution, commerce and trade, innovation and entrepreneurial ecosystems, competitiveness, tax base, and financing vehicles – these are among the many dimensions that make up the Economy of a city. Economy influences urban innovation and the everyday city operation and the life cycles of services provided by cities, with the emphasis on improving their management and quality. It is also a key element in the evolution of cities since it determines not only the feasibility of transformational projects aimed at increasing the quality of life of citizens, but also the fate of cities themselves. Specific instances of the economy component are: 
+•	Commerce and trade
+•	Competitiveness
+•	Entrepreneurship
+•	Finances
+•	Wealth distribution and wealth production</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Energy_cycle</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is formed by the whole energy system: functional nodes (nuclear and power plants, wind farms, biomass/bioenergy power plants, hydroelectric plants, and solar fields) located outside cities and where most of the energy is produced; energy networks to transport mainly electricity or natural gas into the city; and pipelines and ships to transport oil to produce fuels and chemicals that are finally consumed in cities as raw or refined products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environment</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The environment is formed by nature (plants and animals) and by the three basic environmental compartments, air, soil and water, interacting dynamically in a seasonally variable way. Each of these compartments has its own quality indicators.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Environmental_compartment</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The environment is usually modeled as a group of five interacting &quot;compartments” (air, soil, water, sediment and biota). Each environmental compartment can be characterized by a set of properties.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Flow</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Transports some transportable thing in a given amount of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Functions</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the activities that people undertake or perform in the city. The built domain, with its public space, hosts the more systematic, formal and regulated people&apos;s functions (services) in the city. This layer component is concerned with the activities themselves and not with the built_domain_elements that host them. Specific subclasses of functions include: 
+•	Education: Education is the process of facilitating learning. Knowledge, skills, values, beliefs, and habits of a group of people are transferred to other people. Education can be delivered electronically at home or anywhere with internet connectivity (as remote education through the Internet) and, thus, no longer needs to take place in a school.
+•	Health: Health refers to the level of functional or metabolic efficiency of a living organism. In humans it is the ability of individuals or communities to adapt and self-manage when facing physical, mental or social challenges. Health services are provided through specific health care systems, which are organizations of people, institutions, and resources that deliver health care services to meet the specific health needs of target populations.
+•	Transport: Refers to the movement of people, animals and goods from one location to another.
+•	Living: Refers to the way of life. The act of living is the course of an individual&apos;s life, especially when viewed as the sum of personal choices contributing to one&apos;s personal identity.
+•	Performing_arts: Refers to art forms in which artists use their voices and/or the movements of their bodies, often in relation to other objects, to convey artistic expression—as opposed to, for example, purely visual arts, in which artists use paint/canvas or various materials to create physical or static art objects. Performing arts include a variety of disciplines but all are intended to be performed in front of a live audience.
+•	Security: Security is the degree of resistance to, or protection from, harm. It applies to any vulnerable and valuable asset, such as a person, dwelling, community, nation, or organization.
+•	Shopping: Shopping is an activity in which a customer browses the available goods or services presented by one or more retailers with the intent to purchase a suitable selection of them. In some contexts it may be considered a leisure activity as well as an economic one.
+•	Sports: Refers to all forms of usually competitive physical activity which, through casual or organized participation, aim to use, maintain or improve physical ability and skills while providing entertainment to participants, and in some cases, spectators.
+Working: Refers to all the activities related to paid employment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Government</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Government is the part of Society that at some point is elected or appointed to serve the community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Impact</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the effect or influence of one person, thing, or action, on another.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Indicator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CAO Indicator is an owl:subClassOf iso21972:Indicator , thereby inheriting the properties of the 21972&apos;s Indicator definition.
+
+The ISO21972 will be imported into CAO once it is completed and published.
+
+Additional mappings :
+ISO 30182 METRIC</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Information_platform</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Element of the interactions layer used to integrate all information flows that move data through the different interconnected and integrated layers of systems and subsystems that form the City Anatomy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Infraestructure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Connective structures that enable people to get the resources they need, especially from the environment, and bring them to the city or that enable the flows or cycles inside the city itself. Two main types of infrastructures are considered: networks and cycles, where a cycle can have a network as one of its interconnected nodes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interaction_indicator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CPS_City_indicator that measures the performance of specific components of the Interactions subsystem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Interactions between the Structure and Society reflect the activities in the city. These can be analyzed and measured as flows of information. In the context of the City Anatomy, interactions refer to the urban physiology, including its metabolism or cycles, its nervous system, its circulatory system and more. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Interactions_layer_component</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The Interactions system describes the relationship between Structure and Society, with the nodes where functions take place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Knowledge</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Knowledge is a familiarity, awareness or understanding of someone or something, such as facts, information, descriptions, or skills, which is acquired through experience or education by perceiving, discovering, or learning.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Law</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Law is a system of rules that are enforced through social institutions to govern behaviour.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Leadership</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Leadership is both a research area and a practical skill, regarding the ability of an individual or organization to &quot;lead&quot; or guide other individuals, teams, or entire organizations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Man_made_flow</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Artificial flow. For instance, a pipeline or a channel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Matter_cycle</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This is formed by the whole energy system: functional nodes (nuclear and power plants, wind farms, biomass/bioenergy power plants, hydroelectric plants, and solar fields) located outside cities and where most of the energy is produced; energy networks to transport mainly electricity or natural gas into the city; and pipelines and ships to transport oil to produce fuels and chemicals that are finally consumed in cities as raw or refined products.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#MeasurableThing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A &quot;measurable thing&quot; has properties that can be measured (either qualitatively or quantitatively) by some measure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Metropolis</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An Administrative_built_domain_element. Represents a large and densely populated urban area and may include several independent administrative districts. In the anatomy model the scale of the metropolis is in the order of 107 people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Mobility_network</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This infrastructure mostly relates to human transportation, though sometimes to also transporting goods. Everything that enables people to move throughout the city, or cross the city boundaries, falls within the mobility network. Constitutive elements of this infrastructure include: railways, airports, highways, roads, bicycle paths, subways, bus ways (bus rapid transit) and the pedestrian streetscape.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Natural_flow</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Flow of natural origin. For instance, a river.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Nature_cycle</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The “green” infrastructure is formed by the natural elements we bring into the city in a structured way. Includes all flows related to nature (flora and fauna) in the city. It encompasses information about all living non-human entities at all scales, from seeds to trees, animals, and so on. It is the infrastructure that is involved in the reincorporation of nature in city streets, squares, etc., i.e., of nature in the public space, which has an effect on the quality of life.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Neighborhood</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">An area within a city that has some distinctive features and forms a community. In the anatomy model the scale of the block is in the order of 104 people.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Person_role</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Represents the role of a Person in a City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Physical_built_domain_element</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A specific geographical location within a city. Physical built domain elements are not the result of an administrative division of the city. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Policy</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A policy is a deliberate system of principles to guide decisions and achieve rational outcomes. A policy is a statement of intent, and is implemented as a procedure or protocol.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Public_space</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">One of the elements of the built domain. The public space is not just a question of anatomy and infrastructure. It has intrinsic qualitative values. It has a physiological function since this public built space is where infrastructures meet the built domain (buildings, neighborhoods, etc.), and provide the space shared by people to meet, relax and/or to carry out activities individually or in community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Purpose</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Something set up as an object or end to be attained.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Raw_data</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Raw data (also known as primary data) is a term for data collected from a source. Raw data has not been subjected to processing or any other manipulation, and are also referred to as primary data.
+
+http://en.wikipedia.org/wiki/Raw_data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Regulation</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A regulation is a legal norm intended to shape conduct that is a by-product of imperfection (Orbach, Barak, What Is Regulation? 30 Yale Journal on Regulation Online 1 (2012))</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Resident</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific City_role that refers to a person who maintains residency (domicile) in a given place.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Social_organization</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Is a subclass of ‘Non Government Organization’ that refers to a social entity comprising multiple people that has a collective goal and is linked to an external environment. Specific instances of this class are: Club, Family and Community.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Subsystem that includes the people who live or stay in a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_indicator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CPS_City_indicator that measures the performance of specific components of the Society subsystem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Society_layer_component</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The society layer is formed by two components: citizens and government.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The set of physical structures found in a City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_indicator</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CPS_City_indicator that measures the performance of specific components of the Structure subsystem.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Structure_layer_component</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Each of the three constituent elements of the city anatomy structure (i.e., environment, infrastructure and built domain).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_objectives</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific goal that aims at transforming some specific aspect in the city. </Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Transformational_project</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Individual or collaborative enterprise that is carefully planned and designed to achieve a particular transformational objective. A transformational project ties to a process that leads to specific, identifiable change.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#TransportableThing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Thing that can be transported by some infrastructure (i.e., cycle or network)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Urban_function</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The function of an area is its reason, job or purpose for being.  In urban areas this relates to the purpose of a land use for residential areas, recreation, industry etc. Functions can change over time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Visitor</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Specific City_role that refers to a person visiting another person or a place in a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.biocenit.cat/ontologies/city_anatomy/CA.owl#Water_cycle</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Includes supply, sanitation, and the management of clean, waste, and surface waters, the latter with its drainage/collection systems to avoid rainfall causing flash flooding. We can use the term water infrastructure to describe all the physical elements forming part of the water cycle (clean and waste water) as it operates in a structured way in a city.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Property is a characteristic of some things that has type and value.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/Measure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.wurvoc.org/vocabularies/om-1.8/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/Measure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A measure combines a number to a unit of measure or an interval or ratio scale. For example, &quot;3 m&quot; is a measure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/Quantity</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.wurvoc.org/vocabularies/om-1.8/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/Quantity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A quantity is a representation of a quantifiable (standardised) aspect (such as length, mass, and time) of a phenomenon (e.g., a star, food, or a molecule). Quantities are classified according to similarity in (implicit) metrological aspect, e.g. the length of my speedboat and the length of my racing car are classified as length.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.obolibrary.org/obo/IAO_0000412"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#string">http://www.wurvoc.org/vocabularies/om-1.8/</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>http://www.wurvoc.org/vocabularies/om-1.8/Unit_of_measure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A unit of measure is a definite magnitude of a quantity, defined and adopted by convention and/or by law. It is used as a standard for measurement of the same quantity, where any other value of the quantity can be expressed as a simple multiple of the unit of measure. For example, length is a quantity; the metre is a unit of length that represents a definite predetermined length. When we say 10 metre (or 10 m), we actually mean 10 times the definite predetermined length called &quot;metre&quot;.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Biodiversity</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Biodiversity, a contraction of &quot;biological diversity,&quot; generally refers to the variety and variability of life on Earth. One of the most widely used definitions defines it in terms of the variability within species, between species, and between ecosystems. It is a measure of the variety of organisms present in different ecosystems.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#CPS_key_questions</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Each of the seven questions defined by the City Protocol Task Force as the key challenges that cities worldwide are facing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#CityAnatomyThing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Convenience class that acts as a placeholder for all the elements of the City Anatomy Ontology. &apos;CityAnatomyThing&apos; is a SubClassOf &apos;Thing&apos;, and subsumes all concepts in the City Anatomy Ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#CityAnatomyThing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">CityAnatomyThing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#CityIndicatorThing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Convenience class that groups all entitites related to city indicators</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#City_performance</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Performance is the set of qualitative or quantitative information that guides the assessment of city operations. It also facilitates learning from past transformations undergone by a city and also learning from the transformational experiences of other cites under a sound comparative basis and common frame of reference.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#City_system_layer_component</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Each of the constituent elements of a City_system_layer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Cycle_infrastructure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Connective infrastructure formed by nodes and vertices connecting them in a closed chain. Networks can acts as nodes in a cycle infrastructure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Earth</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The maximum scale of the built domain elements. Groups all the built domain elements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Interactions_layer</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Container for the individual components of the Interactions system. The Interactions layer is formed by a number of Interactions_layer_components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Livable_district_projects</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to a district regeneration initiative focused on improving its livability, or the creation of a new livable district.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Network_infrastructure</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">This infrastructure is an interconnected system of things or people. The system represents a physical realization of the abstract graph concept. A network can be a node of the network infraestructure (e.g., the Internet is a network of networks).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#OMThing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Convenience class used to group all the entities if the Units of Measure (OM) ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#OMThing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">OMThing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Object</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The minumum scale of the built domain elements</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Power_distribution_network</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Interconnected network for delivering electricity from suppliers to consumers.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
+        <IRI>#SchemaOrgThing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Convenience class used to group all the entities if the Schema.org ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#label"/>
+        <IRI>#SchemaOrgThing</IRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">SchemaOrgThing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Settlement</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">A settlement, locality or populated place is a community in which people live. A settlement can range in size from a small number of dwellings grouped together to the largest of cities with surrounding urbanized areas. Settlements may include hamlets, villages, towns and cities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Sewer_network</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">The principal element of a sewerage system formed by an aggregate of underground pipelines and sewers receiving and draining waste waters away from population centers and industrial enterprises and toward the appropriate treatment facilities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Structure_layer</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Container for the individual components of the Structure_system. The structure layer is formed by a number of Structure_layer_components.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Use</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Refers to the act of using something</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#Water_distribution_network</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">System of engineered hydrologic and hydraulic components which provide water supply.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.w3.org/2000/01/rdf-schema#comment"/>
+        <IRI>#iso21972Thing</IRI>
+        <Literal xml:lang="en" datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">Convenience class to group all the entities of the ISO21972 ontology</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
